@@ -1,0 +1,152 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.basic-info{
+    background-color: rgb(36, 32, 32);
+    min-height: 600px;
+}
+
+.details {
+    background-color: rgb(255, 255, 255);
+    min-height: 600px;
+}
+
+.contact-item, .time-line-item {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 1em;
+}
+
+h3, h4, .contact-item i {
+    margin: 0 0 0 0;
+    color: whitesmoke;
+}
+.topic {
+    margin-bottom: 1em;
+    color: whitesmoke;
+}
+.head {
+    color: whitesmoke;
+}
+
+.language ul, .interest ul, .ans {
+    color: rgb(151, 151, 151);
+}
+
+.contact-item i {
+    margin-right: 0.5em;
+    height: 32px;
+    width: 32px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 10px;
+}
+li {
+    margin: 0 0 0.5em 0
+}
+
+.contact, .language, .interest, .info, .name, .education, .experience, .skills {
+    margin-left: 1em;
+    margin-top: 1em;
+}
+
+.details-topic {
+    border-bottom: 2px gray solid;
+}
+.topic {
+    border-bottom: 2px whitesmoke solid;
+}
+
+.time-line-item h4 {
+    min-width: 150px;
+}
+
+.time-line-item-body {
+    margin-left: 2em;
+}
+
+.details-topic i {
+    margin-right: 0.5em;
+}
+
+img {
+    border-radius: 50%;
+    object-fit: fill;
+    height: 150px;
+    width: 150px;
+}
+
+.picture {
+    display: flex;
+    margin: 1em auto 0 auto;
+    justify-content: center;
+}
+
+li h4 {
+    color: black;
+}
+
+.info-item {
+    margin-left: 3em;
+}
+
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+ul.timeline:before {
+    content: ' ';
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+ul.timeline > li {
+    margin: 20px 0;
+    padding-left: 50px;
+}
+ul.timeline > li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid black;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+    z-index: 400;
+}
+
+.skills-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.skill {
+    margin-right: 3em;
+}
+
+.progress {
+    background-color: grey !important;
+}
+
+.progress-bar {
+    background-color: rgb(36, 32, 32) !important;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
